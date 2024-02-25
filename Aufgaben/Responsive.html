@@ -58,6 +58,27 @@
 		<a href="#home" class="footer-text">Datenschutz</a>
 	</div>
 </footer>
+/* CSS für die Navigation */
+@media screen and (max-width: 768px) {
+  /* Verstecke die Liste und zeige stattdessen zwei Striche */
+  nav ul.menu-list {
+    display: none;
+  }
+  nav::after {
+    content: '≡≡';
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    padding: 10px;
+  }
+}
 
+/* CSS für den Hover-Effekt auf den Strichen */
+nav:hover::after {
+  color: #555; /* Ändere die Farbe je nach Bedarf */
+}
+
+	
 </html>
 </body>
